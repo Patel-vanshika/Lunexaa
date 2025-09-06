@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUNEXA - Premium Cosmetic Essentials</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- <body> -->
+    <body style="background-color: #e2b8a4;">
+        
+    <!-- Header -->
+    <!-- <header class="bg-white shadow-sm sticky top-0 z-10">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">ShopCart</div> -->
+            
+            <!-- Cart Icon with Badge -->
+            <!-- <div class="relative">
+                    <button id="cart-btn" class="relative text-gray-700 hover:text-gray-900">
+                        <i class="fas fa-shopping-cart text-2xl"></i>
+                        <span id="cart-count" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                    </button>
+            </div>
+        </nav>
+    </header> -->
+                 <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/919403163962" class="whatsapp-btn fixed bottom-8 right-8 w-16 h-16 rounded-full flex items-center justify-center text-white text-3xl z-50 shadow-lg hover:scale-110 transition-slow">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+                <!-- Navigation -->
+    <nav class="navbar fixed w-full z-50 shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-3xl font-bold text-secondary">LUNEXA</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-secondary hover:text-accent transition">Home</a>
+                    <a href="#skincare" class="text-secondary hover:text-accent transition">Skincare</a>
+                    <a href="#makeup" class="text-secondary hover:text-accent transition">Makeup</a>
+                    <a href="#fragrance" class="text-secondary hover:text-accent transition">Fragrance</a>
+                    <a href="#contact" class="text-secondary hover:text-accent transition">Contact</a>
+                    <a href="blog.html" class="text-secondary hover:text-accent transition">Blog</a>
+                    <a href="faq.html" class="text-secondary hover:text-accent transition">FAQs</a>
+                    <button id="cart-btn" class="relative text-gray-700 hover:text-gray-900">
+                    <i class="fas fa-shopping-cart text-2xl"></i>
+                    <span id="cart-count" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                </button>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-secondary focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="md:hidden hidden mt-4">
+                <a href="#home" class="block py-2 text-secondary hover:text-accent">Home</a>
+                <a href="#skincare" class="block py-2 text-secondary hover:text-accent">Skincare</a>
+                <a href="#makeup" class="block py-2 text-secondary hover:text-accent">Makeup</a>
+                <a href="#fragrance" class="block py-2 text-secondary hover:text-accent">Fragrance</a>
+                <a href="#contact" class="block py-2 text-secondary hover:text-accent">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero h-screen flex items-center justify-center text-white pt-20">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8 flex justify-center">
+                    <img src="brand.png" class="rounded-lg shadow-xl max-w-full h-auto" />
+                </div>
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6">Elevate Your Beauty Routine</h1>
+                    <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto md:mx-0">Where luxury meets wellness in the art of beauty</p>
+                    <p class="mb-8 max-w-2xl mx-auto md:mx-0">Discover LUNEXA's premium collection of skincare, makeup, and fragrance designed for modern elegance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- New Arrivals Section -->
+    <section id="newarrivals" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">New Arrivals</h2>
+                <p class="max-w-2xl mx-auto">Discover our latest products</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="product-card bg-light p-6 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="glow serum.png" alt="LUNEXA Glow Serum in amber glass bottle" />
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Glow Serum</h3>
+                    <p class="text-secondary mb-4">Illuminate your complexion with vitamin C</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-lg">₹ 490.00</span>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card bg-light p-6 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="satin lipstick.png" alt="LUNEXA Satin Lipstick in rose gold tube" />
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Satin Lipstick</h3>
+                    <p class="text-secondary mb-4">Hydrating color with luminous finish</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-lg">₹ 260.00</span>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card bg-light p-6 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="mist perfume.png" alt="LUNEXA Mist Perfume in delicate spray bottle" />
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Mist Perfume</h3>
+                    <p class="text-secondary mb-4">Lightweight, refreshing fragrance</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-lg">₹ 650.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Featured Products -->
+     <!-- Best Seller -->
+    <section id="bestseller" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Bestsellers</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                 <!-- Product 1 -->
+                    <div class="product-card bg-light p-6 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="day cream.png" alt="LUNEXA Radiant Day Cream in sleek purple packaging with gold accents" class="w-full h-full object-cover" />
+                    </div>
+                        <h3 class="text-xl font-semibold mb-2">LUNEXA Radiant Day Cream</h3>
+                        <p class="text-gray-700 mb-4">Provides 24-hour hydration while protecting against environmental stressors.</p>
+                             <div class="flex justify-between items-center">
+                        <span class="font-bold text-lg">₹ 400.00</span>
+                       <button class="add-to-cart bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-300" data-id="1" data-name="Day Cream" data-price="400" data-image="day cream.png">
+                            Add to Cart
+                        </button>
+                        </div>
+                    </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card bg-light p-6 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="feather foundation.png" alt="LUNEXA Featherlight Foundation in sleek silver bottle with pump, shown in different shades on arm swatches" />
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Featherlight Foundation</h3>
+                    <p class="text-secondary mb-4">Buildable coverage, natural finish, Lite to apply</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-lg">₹ 400.00</span>
+                        <button class="add-to-cart bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-300" data-id="2" data-name="Featherlight Foundation" data-price="400" data-image="feather foundation.png">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card bg-light p-6 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="luminous.png" alt="LUNEXA Luminous Eau de Parfum in delicate frosted glass bottle with gold collar, surrounded by white peony flowers" />
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Luminous</h3>
+                    <p class="text-secondary mb-4">Top: Bergamot, Pink Pepper</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-lg">₹ 780.00</span>
+                       <button class="add-to-cart bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-300" data-id="3" data-name="Luminous" data-price="780" data-image="luminous.png">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skincare Section -->
+    <section id="skincare" class="py-16 bg-light">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Skincare Essentials</h2>
+                <p class="max-w-2xl mx-auto">Nourish and protect your skin with our dermatologist-approved formulas</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Product 1 -->
+                     <div class="product-card bg-white p-4 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="day cream.png" alt="LUNEXA Radiant Day Cream in sleek purple packaging with gold accents" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">LUNEXA Radiant Day Cream</h3>
+                        <p class="text-gray-600 mb-4">SPF 30 • Hydrates & Protects</p>
+                        <p class="text-gray-700 mb-4">Our lightweight day cream provides 24-hour hydration while protecting against environmental stressors with antioxidants and broad-spectrum SPF 30.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold">₹ 400.00</span>
+                          <button class="add-to-cart bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-300" data-id="1" data-name="Day Cream" data-price="400" data-image="day cream.png">
+                            Add to Cart
+                        </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="cleasning oil.png" alt="LUNEXA Purifying Cleansing Oil in minimalist purple bottle with dropper" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">LUNEXA Purifying Cleansing Oil</h3>
+                        <p class="text-gray-600 mb-4">Gentle • Effective</p>
+                        <p class="text-gray-700 mb-4">Our plant-based cleansing oil effectively dissolves makeup and impurities while nourishing skin with jojoba oil and vitamin E, leaving skin balanced and never stripped.</p>
+                        <div class="flex justify-between items-center">
+                               <span class="font-bold">₹ 600.00</span>
+                           <button class="add-to-cart bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-300" data-id="4" data-name="Purifying Cleansing Oil" data-price="600" data-image="cleasning oil.png">
+                            Add to Cart
+                        </button>
+                        </div>
+                    </div>
+                </div> 
+                
+                
+                <!-- Product 3 -->
+                <div class="product-card bg-white p-4 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="hydra gel.png" alt="LUNEXA Hydra-Gel Moisturizer in frosted glass jar with silver lid, surrounded by fresh aloe leaves" />
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">LUNEXA Hydra-Gel Moisturizer</h3>
+                    <p class="text-gray-600 mb-4">Gentle • Oil-Free</p>
+                    <p class="text-sm text-gray-600 mb-3">LUNEXA Hydra-Gel Moisturizer delivers deep, long-lasting hydration with a lightweight, fast-absorbing formula. Enriched with hyaluronic acid and botanical extracts, it revitalizes and soothes for a fresh, dewy glow</p>
+                    <div class="flex justify-between items-center">
+                         <span class="font-bold">₹ 450.00</span>
+                            <button class="add-to-cart bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-300" data-id="19" data-name="Hydra-Gel Moisturizer" data-price="450" data-image="hydra gel.png">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+
+                 <!-- Product 4 -->
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="eye counter cream.png" alt="LUNEXA Eye Contour Cream in sleek silver tube with cooling applicator" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">LUNEXA Eye Contour Cream</h3>
+                        <p class="text-gray-600 mb-4">De-Puff • Brighten</p>
+                        <p class="text-gray-700 mb-4">Our cooling eye cream with caffeine and tetrapeptides reduces puffiness and dark circles while smoothing fine lines with its lightweight yet moisturizing formula.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold">₹ 690.00</span>
+                            <button class="add-to-cart bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-300" data-id="5" data-name="Eye Contour Cream" data-price="690" data-image="eye counter cream.png">
+                            Add to Cart
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                 <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="serum.png" alt="LUNEXA Glow Serum in frosted glass bottle with gold pump dispenser" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">LUNEXA Illuminating Serum</h3>
+                        <p class="text-gray-600 mb-4">Brighten & Even</p>
+                        <p class="text-gray-700 mb-4">This potent vitamin C serum helps fade dark spots and improves skin radiance with 10% stable vitamin C, niacinamide, and licorice root extract.</p>
+                        <div class="flex justify-between items-center">
+                             <span class="font-bold">₹ 999.00</span>
+                            <button class="add-to-cart bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-300" data-id="6" data-name="Illuminating Serum" data-price="999" data-image="serum.png">
+                            Add to Cart
+                        </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="nigth cream.png" alt="LUNEXA Renewal Night Cream in elegant purple jar with luxury applicator" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">LUNEXA Renewal Night Cream</h3>
+                        <p class="text-gray-600 mb-4">Repair & Replenish</p>
+                        <p class="text-gray-700 mb-4">This rich formulation works overnight with retinol alternatives and peptides to accelerate skin renewal while you sleep, waking up to visibly refreshed skin.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold">₹ 400.00</span>
+                            <button class="add-to-cart bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-300" data-id="7" data-name="Renewal Night Cream" data-price="400" data-image="nigth cream.png">
+                            Add to Cart
+                        </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="exfoliating mask.png" alt="LUNEXA Exfoliating Mask in purple jar with luxurious texture visible" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">LUNEXA Reveal Exfoliating Mask</h3>
+                        <p class="text-gray-600 mb-4">Gentle Resurfacing</p>
+                        <p class="text-gray-700 mb-4">This weekly treatment mask combines enzymatic and physical exfoliation to reveal brighter, smoother skin without irritation, suitable for even sensitive skin types.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold">₹ 850.00</span>
+                           <button class="add-to-cart bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-300" data-id="8" data-name="Reveal Exfoliating Mask" data-price="850" data-image="exfoliating mask.png">
+                            Add to Cart
+                        </button>
+                        </div>
+                    </div>
+                </div>
+
+                  <!-- Product 8 -->
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="midnight serum.png" alt="LUNEXA Midnight Renewal Serum in sleek dark blue bottle with dropper on wooden surface" />
+                    </div>
+                     <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">LUNEXA Midnight Renewal Serum</h3>
+                   <p class="text-gray-700 mb-4">Midnight Renewal Serum is a restorative night treatment that boosts skin's natural repair process while you sleep. Infused with powerful antioxidants and hydration, it leaves skin visibly smoother, firmer, and more radiant by morning.</p>
+                    <div class="flex justify-between items-center">
+                         <span class="font-bold">₹ 940.00</span>
+                           <button class="add-to-cart bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-300" data-id="9" data-name="Midnight Renewal Serum" data-price="940" data-image="midnight serum.png">
+                            Add to Cart
+                        </button>
+                            </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Makeup Section -->
+    <section id="makeup" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Makeup Collection</h2>
+                <p class="max-w-2xl mx-auto">Flawless, long-lasting formulas for a polished look</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Product 1 -->
+                <div class="product-card bg-light p-4 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="feather foundation.png" alt="LUNEXA Featherlight Foundation in sleek silver bottle with pump, shown in different shades on arm swatches" />
+                    </div>
+                    <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Featherlight Foundation</h3>
+                   <p class="text-gray-600 mb-4">Buildable coverage, natural finish</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold">₹ 400.00</span>
+                         <button class="add-to-cart bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-300" data-id="2" data-name="Featherlight Foundation" data-price="400" data-image="feather foundation.png">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                </div>
+
+                  <!-- Product 2 -->
+                        <div class="product-card bg-light p-4 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="tint foundation.png" alt="LUNEXA Skin Tint Foundation in frosted glass bottle with pump dispenser" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Skin Tint Foundation</h3>
+                        <p class="text-gray-600 mb-4">Lightweight, Skin-like</p>
+                        <div class="flex justify-between items-center">
+                        <span class="font-bold">₹ 420.00</span>
+                         <button class="add-to-cart bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-300" data-id="10" data-name="Skin Tint Foundation" data-price="420" data-image="tint foundation.png">
+                            Add to Cart
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card bg-light p-4 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="blush palette.png" alt="LUNEXA Cream Blush Palette with six delicate shades in matte and shimmer finishes, open on marble table" />
+                    </div>
+                      <h3 class="text-xl font-semibold text-gray-800 mb-2">Cream Blush Palette</h3>
+                   <p class="text-gray-600 mb-4">Six versatile shades for every look</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold">₹ 360.00 </span>
+                        <button class="add-to-cart bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-300" data-id="11" data-name="Cream Blush Palette" data-price="360" data-image="blush palette.png">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                   <!-- Product 4  -->
+                <div class="product-card bg-light p-4 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="luminizer palette.png" alt="LUNEXA Luminous Powder Palette with four highlight shades in gold compact" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Luminizer Palette</h3>
+                        <p class="text-gray-600 mb-4">Glow, Sculpt, Define</p>
+                        <div class="flex justify-between items-center">
+                        <span class="font-bold">₹ 500.00 </span>
+                        <button class="add-to-cart bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-300" data-id="12" data-name="Luminizer Palette" data-price="500" data-image="luminizer palette.png">
+                            Add to Cart
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+              <div class="product-card bg-light p-4 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="mascara.png" alt="LUNEXA Infinite Length Mascara in gold and black tube with hourglass-shaped wand, placed next to open eye demo" />
+                    </div>
+                    <div class="p-6">
+                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Infinite Length Mascara</h3>
+                    <p class="text-gray-600 mb-4">Clump-free volume and definition</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold">₹ 230.00 </span>
+                        <button class="add-to-cart bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-300" data-id="13" data-name="Infinite Length Mascara" data-price="230" data-image="mascara.png">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                </div>
+
+              
+                
+                <!-- Product 6 -->
+                <div class="product-card bg-light p-4 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="brow pencil.png" alt="LUNEXA Precision Brow Pencil with spooley in dual-ended taupe packaging, shown creating hair-like strokes" />
+                    </div>
+                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Precision Brow Pencil</h3>
+                    <p class="text-gray-600 mb-4">Natural-looking brow definition</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold">₹ 200.00 </span>
+                        <button class="add-to-cart bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-300" data-id="14" data-name="Precision Brow Pencil" data-price="200" data-image="brow pencil.png">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                 <div class="product-card bg-light p-4 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="velvet lipstick.png" alt="LUNEXA Velvet Matte Lipstick in rose gold packaging displayed on hand with elegant manicure" />
+                    </div>
+                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Velvet Matte Lipstick</h3>
+                    <p class="text-gray-600 mb-4">Long-wearing pigment with creamy, comfortable finish</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold">₹ 280.00 </span>
+                       <button class="add-to-cart bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-300" data-id="15" data-name="Velvet Matte Lipstick" data-price="280" data-image="velvet lipstick.png">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+           <div class="product-card bg-light p-4 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="dew blush.png" alt="LUNEXA Liquid Blush in frosted glass bottle with dropper dispenser" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Dew Blush</h3>
+                        <p class="text-gray-600 mb-4">Buildable, Long-wearing</p>
+                        <div class="flex justify-between items-center">
+                        <span class="font-bold">₹ 540.00 </span>
+                       <button class="add-to-cart bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-300" data-id="16" data-name="Dew Blush" data-price="540" data-image="dew blush.png">
+                            Add to Cart
+                        </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Fragrance Section -->
+    <section id="fragrance" class="py-16 bg-light">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Signature Fragrances</h2>
+                <p class="max-w-2xl mx-auto">Captivating scents that linger beautifully</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Product 1 -->
+                <div class="product-card bg-white p-6 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="luminous.png" alt="LUNEXA Luminous Eau de Parfum in delicate frosted glass bottle with gold collar, surrounded by white peony flowers" />
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Luminous</h3>
+                    <p class="text-secondary mb-4">Top: Bergamot, Pink Pepper<br>
+                    Heart: Peony, Violet<br>
+                    Base: Sandalwood, Musk</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-lg">₹ 780.00</span>
+                        <button class="add-to-cart bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-300" data-id="3" data-name="Luminous" data-price="780" data-image="luminous.png">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card bg-white p-6 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="noir.png" alt="LUNEXA Noir Eau de Parfum in elegant black glass bottle with silver accents, resting on dark velvet" />
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Noir</h3>
+                    <p class="text-secondary mb-4">Top: Black Currant, Saffron<br>
+                    Heart: Rose, Oud<br>
+                    Base: Amber, Vanilla</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-lg">₹ 880.00</span>
+                        <button class="add-to-cart bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-300" data-id="17" data-name="Noir" data-price="880" data-image="noir.png">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card bg-white p-6 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="soils.png" alt="LUNEXA Solis Eau de Parfum in radiant amber glass bottle, shown with citrus fruits and tropical leaves" />
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Solis</h3>
+                    <p class="text-secondary mb-4">Top: Blood Orange, Ginger<br>
+                    Heart: Coconut, Jasmine<br>
+                    Base: Driftwood, Salt</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-lg">₹ 820.00</span>
+                         <button class="add-to-cart bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-300" data-id="18" data-name="Solis" data-price="820" data-image="soils.png">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                 <div class="product-card bg-white p-6 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="elixir.png" alt="LUNEXA Elixir perfume bottle in purple glass with gold cap on marble surface" class="w-full h-full object-cover" />
+                    </div>
+                    
+                        <h3 class="text-xl font-semibold mb-2">Elixir</h3>
+                        <p class="text-secondary mb-4">Top: Floral-Oriental, Vanilla   <br>
+                        Heart: Bulgarian Rose, Sambac Jasmine <br>
+                        Base: Sandalwood, Amber</p>
+                        <p class="text-gray-700 mb-4">A captivating blend of Bulgarian rose, Sambac jasmine, and vanilla absolute, balanced with warm amber and sandalwood for a timeless floral-oriental composition.</p>
+                        <div class="flex justify-between items-center">
+                        <span class="font-bold text-lg">₹ 880.00</span>
+                         <button class="add-to-cart bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-300" data-id="18" data-name="Elixir" data-price="880" data-image="elixir.png">
+                            Add to Cart
+                        </button>
+                        </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+        <!-- Cart Drawer -->
+    <div id="cart-overlay" class="cart-overlay fixed inset-0 bg-black bg-opacity-50 z-20"></div>
+    
+    <div id="cart-drawer" class="cart-drawer fixed top-0 right-0 w-full md:w-96 h-full bg-white shadow-lg z-30 overflow-y-auto">
+        <div class="p-4">
+            <div class="flex justify-between items-center border-b pb-4">
+                <h2 class="text-xl font-bold text-gray-800">Your Cart (<span id="cart-items-count">0</span>)</h2>
+                <button id="close-cart" class="text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div id="cart-items" class="py-4">
+                <!-- Cart items will be added here dynamically -->
+                <div class="text-center text-gray-500 py-8" id="empty-cart-message">
+                    Your shopping cart is empty
+                </div>
+            </div>
+            
+            <div class="border-t pt-4">
+                <div class="flex justify-between mb-2">
+                    <span class="font-medium">Subtotal:</span>
+                    <span id="cart-subtotal" class="font-bold">₹0.00</span>
+                </div>
+                <button id="checkout-btn" class="w-full bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+                    Proceed to Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- Authentication Modal -->
+    <div id="authModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 hidden auth-modal">
+        <div class="bg-white rounded-2xl shadow-xl w-full max-w-md overflow-hidden">
+            <!-- Close Button -->
+            <button id="closeModal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            
+            <!-- Tab Navigation -->
+            <div class="flex border-b border-gray-200">
+                <button id="loginTab" class="auth-tab active py-4 px-6 w-1/2 text-center font-medium">Login</button>
+                <button id="registerTab" class="auth-tab py-4 px-6 w-1/2 text-center font-medium">Register</button>
+            </div>
+            
+            <!-- Login Form -->
+             <form action="login.php" method="POST">
+            <div id="loginForm" class="p-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-6">Welcome back!</h3>         
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-gray-700 mb-2">Email</label>
+                        <input type="email" id="loginEmail" name="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition duration-300" placeholder="Enter your email" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Password</label>
+                        <input type="password" id="loginPassword" name="password" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition duration-300" placeholder="Enter your password" required>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="rememberMe" class="rounded text-purple-600 focus:ring-purple-500">
+                            <label for="rememberMe" class="ml-2 text-sm text-gray-600">Remember me</label>
+                        </div>
+                        <a href="#" class="text-sm text-black -600 hover:underline">Forgot password?</a>
+                    </div>
+                    <button id="loginBtn" class="w-full bg-black-700 hover:bg-black-800 text-black py-3 rounded-lg font-medium transition duration-300 mt-4">
+                        Login <i class="fas fa-sign-in-alt ml-2"></i>
+                    </button>
+                </form>
+                    <!-- <div class="text-center text-sm text-gray-500 mt-6">
+                        Or login with
+                    </div>
+                    <div class="flex justify-center space-x-4 mt-2">
+                        <button class="p-2 rounded-full border border-gray-300 hover:bg-gray-50 transition duration-300">
+                            <i class="fab fa-google text-red-500"></i>
+                        </button>
+                        <button class="p-2 rounded-full border border-gray-300 hover:bg-gray-50 transition duration-300">
+                            <i class="fab fa-facebook text-blue-600"></i>
+                        </button>
+                    </div> -->
+                </div>
+            </div>
+            
+            <!-- Registration Form -->
+             <form action="register.php" method="POST">
+            <div id="registerForm" class="p-6" style="display: none;">
+                <h3 class="text-xl font-bold text-gray-800 mb-6">Create your account</h3>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-gray-700 mb-2">Full Name</label>
+                        <input type="text" id="regName" name="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition duration-300" placeholder="Enter your full name" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Email</label>
+                        <input type="email" id="regEmail" name="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition duration-300" placeholder="Enter your email" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Mobile Number</label>
+                        <input type="tel" id="regMobile" name="mobile" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition duration-300" placeholder="Enter mobile number" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Password</label>
+                        <input type="password" id="regPassword" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition duration-300" placeholder="Create password">
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="acceptTerms" class="rounded text-purple-600 focus:ring-purple-500">
+                        <label for="acceptTerms" class="ml-2 text-sm text-gray-600">I accept the <a href="#" class="text-black-600 hover:underline">Terms & Conditions</a></label>
+                    </div>
+                    <button id="registerBtn" class="w-full bg-black-700 hover:bg-black-800 text-black py-3 rounded-lg font-medium transition duration-300 mt-4 disabled:opacity-50" disabled>
+                        Create Account <i class="fas fa-user-plus ml-2"></i>
+                    </button>
+                </div>
+            </div>
+            </form>
+            <!-- Registration Form -->
+            <!-- <form action="register.php" method="POST">
+            <div id="registerForm" class="p-6" style="display: none;">
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">Create your account</h3>
+                    <div class="space-y-4">
+
+            <div>
+                <label class="block text-gray-700 mb-2">Full Name</label>
+                <input type="text" id="regName" name="username" 
+                       class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition duration-300" 
+                       placeholder="Enter your full name" required>
+            </div>
+
+            <div>
+                <label class="block text-gray-700 mb-2">Email</label>
+                <input type="email" id="regEmail" name="email"
+                       class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition duration-300" 
+                       placeholder="Enter your email" required>
+            </div>
+
+            <div>
+                <label class="block text-gray-700 mb-2">Password</label>
+                <input type="password" id="regPassword" name="password"
+                       class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition duration-300" 
+                       placeholder="Create password" required>
+            </div>
+
+            <div class="flex items-center">
+                <input type="checkbox" id="acceptTerms" class="rounded text-purple-600 focus:ring-purple-500" required>
+                <label for="acceptTerms" class="ml-2 text-sm text-gray-600">
+                    I accept the <a href="#" class="text-black-600 hover:underline">Terms & Conditions</a>
+                </label>
+            </div>
+
+            <button type="submit" id="registerBtn" 
+                    class="w-full bg-black-700 hover:bg-black-800 text-black py-3 rounded-lg font-medium transition duration-300 mt-4 disabled:opacity-50">
+                Create Account <i class="fas fa-user-plus ml-2"></i>
+            </button>
+
+                </div>
+                </div>
+        </form> -->
+        </div>
+    </div>
+
+   
+
+     
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-secondary text-black">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/de7568ea-d918-40da-bac3-582096564bc2.png" alt="LUNEXA laboratory with scientists in white coats carefully formulating products with natural ingredients" class="rounded-lg shadow-xl" />
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6">Our Philosophy</h2>
+                    <p class="mb-4">At LUNEXA, we believe beauty should be effortless yet transformative. Our formulas combine cutting-edge science with consciously-sourced ingredients to deliver visible results without compromise.</p>
+                    <p class="mb-6">Every product is dermatologist-tested, cruelty-free, and developed with your skin's health as the priority.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-leaf text-accent mr-2"></i>
+                            <span>Clean Ingredients</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-heart text-accent mr-2"></i>
+                            <span>Cruelty-Free</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-recycle text-accent mr-2"></i>
+                            <span>Eco-Conscious</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">What Our Customers Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-light p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-4">"The Midnight Renewal Serum transformed my skin. I wake up looking refreshed even after late nights."</p>
+                    <div class="flex items-center">
+                        <img src="pradnya.jpg" alt="Portrait of satisfied customer Sarah J. with glowing skin" class="w-10 h-10 rounded-full mr-3" />
+                        <div>
+                            <p class="font-semibold">Pradnya Ahire</p>
+                            <p class="text-sm text-gray-500">Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-light p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-4">"Luminous has become my signature scent. I get compliments all day long!"</p>
+                    <div class="flex items-center">
+                        <img src="sayali.jpg" alt="Portrait of happy customer Michaela T. wearing elegant makeup" class="w-10 h-10 rounded-full mr-3" />
+                        <div>
+                            <p class="font-semibold">Sayali Yekehnde</p>
+                            <p class="text-sm text-gray-500">Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-light p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="mb-4">"The Featherlight Foundation is the first that doesn't settle into my fine lines. Game changer!"</p>
+                    <div class="flex items-center">
+                        <img src="sunita.jpg" alt="Portrait of loyal customer Elena R. showing flawless makeup application" class="w-10 h-10 rounded-full mr-3" />
+                        <div>
+                            <p class="font-semibold">Sunita Bhandari</p>
+                            <p class="text-sm text-gray-500">Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   <!-- Contact Section  -->
+    <section class="py-20 bg-white" id="contact">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 md:pr-12 mb-10 md:mb-0">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">Get In Touch</h2>
+                    <p class="text-gray-600 mb-8">Have questions about our products or need help with your order? Our team is here to help. </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Our Address</h4>
+                                <p class="text-gray-600">402, Manisha Legacy, Dwarka, Nashik - 422011. </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-4 mt-1">
+                                <i class="fas fa-phone-alt text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Phone Number</h4>
+                                <p class="text-gray-600">+91 9403163962</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-4 mt-1">
+                                <i class="fas fa-envelope text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Email Address</h4>
+                                <p class="text-gray-600">patelvanshika050@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-4 mt-1">
+                                <i class="fas fa-clock text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Opening Hours</h4>
+                                <p class="text-gray-600">Monday - Saturday: 9:00 AM - 7:00 PM</p>
+                                <p class="text-gray-600">Sunday: Holiday</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-semibold text-gray-800 mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:text-yellow-500 hover:bg-gray-200 transition-slow">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:text-yellow-500 hover:bg-gray-200 transition-slow">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:text-yellow-500 hover:bg-gray-200 transition-slow">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-gray-100 p-8 rounded-lg">
+                        <h3 class="text-2xl font-bold mb-6 text-gray-800">Send Us a Message</h3>
+                        <form id="contact-form" action= "https://api.web3forms.com/submit" method="POST">
+                            <div class="mb-4">
+                                <input type="hidden" name="access_key" value="a424b0b8-b705-4839-8096-35a2ca945601">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-yellow-500" required>
+                            </div>
+                    
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-yellow-500" required>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-yellow-500">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                                <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-yellow-500"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-yellow-500 text-gray-900 font-semibold py-3 px-6 rounded-lg hover:bg-yellow-600 transition-slow">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-2xl font-bold mb-2">To Order Contact Us on Our WhatsApp</p>
+            <h2 class="text-2xl font-bold mb-4">Join Our Community</h2>
+            <p class="max-w-lg mx-auto mb-6">Subscribe to receive exclusive offers, beauty tips, and early access to new releases.</p>
+            <form class="flex flex-col md:flex-row max-w-md mx-auto">
+                <input type="email" placeholder="Your email address" class="flex-grow px-4 py-2 border rounded-l-lg focus:outline-none focus:border-accent mb-2 md:mb-0">
+                <button type="submit" class="bg-accent hover:bg-opacity-90 text-white px-6 py-2 rounded-r-lg md:rounded-l-none font-medium transition">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-gray-800 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">LUNEXA</h3>
+                    <p class="mb-4">Premium cosmetics for the modern individual who values both performance and purity.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-white transition"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="hover:text-white transition"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Shop</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#skincare" class="hover:text-accent transition">Skincare</a></li>
+                        <li><a href="#makeup" class="hover:text-accent transition">Makeup</a></li>
+                        <li><a href="#fragrance" class="hover:text-accent transition">Fragrance</a></li>
+                        <li><a href="#bestseller" class="hover:text-accent transition">Bestsellers</a></li>
+                        <li><a href="#newarrivals" class="hover:text-accent transition">New Arrivals</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Help</h4>
+                    <ul class="space-y-2">
+                        <li><a href="faq.html" class="hover:text-accent transition">FAQs</a></li>
+                        <li><a href="faq.html" class="hover:text-accent transition">Shipping & Returns</a></li>
+                        <li><a href="faq.html" class="hover:text-accent transition">Track Order</a></li>
+                        <li><a href="#contact" class="hover:text-accent transition">Contact Us</a></li>
+                        <li><a href="faq.html#privacy" class="hover:text-accent transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">About</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="hover:text-accent transition">Our Story</a></li>
+                        <li><a href="#about" class="hover:text-accent transition">Ingredients</a></li>
+                        <li><a href="blog.html" class="hover:text-accent transition">Blog</a></li>
+                        <li><a href="#home" class="hover:text-accent transition">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-500 mt-12 pt-8 text-sm text-gray-800 text-center">
+                <p>© 2023 LUNEXA Cosmetics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+     
+     <script>
+
+        // DOM Elements
+        const checkoutBtn = document.getElementById('checkout-btn');
+        const authModal = document.getElementById('authModal');
+        const closeModal = document.getElementById('closeModal');
+        const loginTab = document.getElementById('loginTab');
+        const registerTab = document.getElementById('registerTab');
+        const loginForm = document.getElementById('loginForm');
+        const registerForm = document.getElementById('registerForm');
+        const registerBtn = document.getElementById('registerBtn');
+        const acceptTerms = document.getElementById('acceptTerms');
+
+        // Show modal when clicking checkout button
+        checkoutBtn.addEventListener('click', () => {
+            authModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        });
+
+        // Close modal
+        closeModal.addEventListener('click', () => {
+            authModal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+
+        // Tab switching
+        loginTab.addEventListener('click', () => {
+            loginTab.classList.add('active');
+            registerTab.classList.remove('active');
+            loginForm.style.display = 'block';
+            registerForm.style.display = 'none';
+        });
+
+        registerTab.addEventListener('click', () => {
+            registerTab.classList.add('active');
+            loginTab.classList.remove('active');
+            registerForm.style.display = 'block';
+            loginForm.style.display = 'none';
+        });
+
+
+
+        // Terms checkbox
+        acceptTerms.addEventListener('change', () => {
+            registerBtn.disabled = !acceptTerms.checked;
+        });
+
+        // Form submissions (simulated)
+        
+                         // Registration
+       document.getElementById('registerBtn').addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent form submission and page reload
+
+    // Get OTP from inputs
+    // const otpInputs = document.querySelectorAll('.otp-input');
+    // let otp = '';
+    // otpInputs.forEach(input => {
+    //     otp += input.value;
+    // });
+
+    // if (otp.length !== 6) {
+    //     alert('Please enter the complete 6-digit OTP');
+    //     return;
+    // }
+
+    const data = new FormData();
+    data.append("name", document.getElementById('regName').value);
+    data.append("email", document.getElementById('regEmail').value);
+    data.append("mobile", document.getElementById('regMobile').value);
+    data.append("password", document.getElementById('regPassword').value);
+
+    fetch("register.php", { method: "POST", body: data })
+        .then(res => res.text())
+        .then(res => {
+            if (res === "success") {
+                alert("Registration successful! Please login.");
+                // Switch to login tab
+                loginTab.classList.add('active');
+                registerTab.classList.remove('active');
+                loginForm.style.display = 'block';
+                registerForm.style.display = 'none';
+                // Clear register form
+                document.getElementById('regName').value = '';
+                document.getElementById('regEmail').value = '';
+                document.getElementById('regMobile').value = '';
+                document.getElementById('regPassword').value = '';
+                document.getElementById('acceptTerms').checked = false;
+                registerBtn.disabled = true;
+                // Clear OTP inputs
+                otpInputs.forEach(input => input.value = '');
+                otpSection.classList.add('hidden');
+            } else {
+                alert("Error: " + res);
+            }
+        });
+});
+                            // Login
+       document.getElementById('loginBtn').addEventListener('click', () => {
+    const data = new FormData();
+    data.append("email", document.getElementById('loginEmail').value);
+    data.append("password", document.getElementById('loginPassword').value);
+
+    fetch("login.php", { method: "POST", body: data })
+        .then(res => res.text())
+        .then(res => {
+            if (res === "success") {
+                alert("Login successful!");
+                window.location.href = "checkout.html"; // Redirect after successful login
+            } else if (res.includes("<")) {
+                // If response contains HTML (redirect), navigate to checkout.html
+                window.location.href = "checkout.html";
+            } else {
+                alert(res);
+            }
+        });
+});
+
+
+
+         document.addEventListener('DOMContentLoaded', function() {
+            // Cart state
+            let cart = JSON.parse(localStorage.getItem("cart")) || {
+                items: [],
+                total: 0
+            };
+
+            // DOM Elements
+            const cartBtn = document.getElementById('cart-btn');
+            const cartCount = document.getElementById('cart-count');
+            const closeCartBtn = document.getElementById('close-cart');
+            const cartOverlay = document.getElementById('cart-overlay');
+            const cartDrawer = document.getElementById('cart-drawer');
+            const cartItemsContainer = document.getElementById('cart-items');
+            const emptyCartMessage = document.getElementById('empty-cart-message');
+            const cartItemsCount = document.getElementById('cart-items-count');
+            const cartSubtotal = document.getElementById('cart-subtotal');
+            const checkoutBtn = document.getElementById('checkout-btn');
+            const addToCartBtns = document.querySelectorAll('.add-to-cart');
+
+            // Open cart drawer
+            cartBtn.addEventListener('click', function() {
+                cartDrawer.classList.add('open');
+                cartOverlay.classList.add('open');
+                document.body.style.overflow = 'hidden';
+            });
+
+            // Close cart drawer
+            closeCartBtn.addEventListener('click', closeCart);
+            cartOverlay.addEventListener('click', closeCart);
+
+            function closeCart() {
+                cartDrawer.classList.remove('open');
+                cartOverlay.classList.remove('open');
+                document.body.style.overflow = 'auto';
+            }
+
+            // Add to cart
+            addToCartBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const id = this.getAttribute('data-id');
+                    const name = this.getAttribute('data-name');
+                    const price = parseFloat(this.getAttribute('data-price'));
+                    const image = this.getAttribute('data-image');
+                    
+                    // Check if item already exists in cart
+                    const existingItemIndex = cart.items.findIndex(item => item.id === id);
+                    
+                    if (existingItemIndex > -1) {
+                        // Increment quantity
+                        cart.items[existingItemIndex].quantity += 1;
+                    } else {
+                        // Add new item
+                        cart.items.push({
+                            id,
+                            name,
+                            price,
+                            image,
+                            quantity: 1
+                        });
+                    }
+                    
+                    // Update cart
+                    updateCart();
+                    openCartFeedback(name);
+                });
+            });
+
+            // Update cart UI
+            function updateCart() {
+                // Calculate total items and subtotal
+                let totalItems = 0;
+                let subtotal = 0;
+
+                cart.items.forEach(item => {
+                    totalItems += item.quantity;
+                    subtotal += item.price * item.quantity;
+                });
+
+                // Update cart badge
+                cartCount.textContent = totalItems;
+
+                // Update cart count in drawer
+                cartItemsCount.textContent = totalItems;
+
+                // Update subtotal
+                cartSubtotal.textContent = '₹' + subtotal.toFixed(2);
+
+                // Enable/disable checkout button
+                checkoutBtn.disabled = totalItems === 0;
+
+                // Save cart to localStorage
+                localStorage.setItem("cart", JSON.stringify(cart));
+                
+                // Update cart items list
+                if (cart.items.length === 0) {
+                    emptyCartMessage.style.display = 'block';
+                    cartItemsContainer.innerHTML = '';
+                } else {
+                    emptyCartMessage.style.display = 'none';
+                    
+                    let cartItemsHTML = '';
+                    cart.items.forEach(item => {
+                        cartItemsHTML += `
+                            <div class="cart-item border-b py-4" data-id="${item.id}">
+                                <div class="flex">
+                                    <div class="w-20 h-20 bg-gray-100 rounded-md overflow-hidden mr-4">
+                                        <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover">
+                                    </div>
+                                    <div class="flex-1">
+                                        <h3 class="font-medium">${item.name}</h3>
+                                        <p class="text-gray-600">₹${item.price.toFixed(2)}</p>
+                                        <div class="flex items-center mt-2">
+                                            <button class="quantity-btn decrease-quantity bg-gray-200 hover:bg-gray-300 rounded-l" data-id="${item.id}">-</button>
+                                            <span class="quantity px-3">${item.quantity}</span>
+                                            <button class="quantity-btn increase-quantity bg-gray-200 hover:bg-gray-300 rounded-r" data-id="${item.id}">+</button>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col items-end justify-between">
+                                        <button class="remove-item text-red-500 hover:text-red-700" data-id="${item.id}">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                        <p class="font-medium text-gray-800">₹${(item.price * item.quantity).toFixed(2)}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    });
+                    
+                    cartItemsContainer.innerHTML = cartItemsHTML;
+                    
+                    // Add event listeners for quantity buttons
+                    document.querySelectorAll('.increase-quantity').forEach(btn => {
+                        btn.addEventListener('click', function() {
+                            const id = this.getAttribute('data-id');
+                            const item = cart.items.find(item => item.id === id);
+                            if (item) {
+                                item.quantity += 1;
+                                updateCart();
+                            }
+                        });
+                    });
+                    
+                    document.querySelectorAll('.decrease-quantity').forEach(btn => {
+                        btn.addEventListener('click', function() {
+                            const id = this.getAttribute('data-id');
+                            const item = cart.items.find(item => item.id === id);
+                            if (item) {
+                                if (item.quantity > 1) {
+                                    item.quantity -= 1;
+                                } else {
+                                    // Remove if quantity is 1 and decreasing
+                                    cart.items = cart.items.filter(item => item.id !== id);
+                                }
+                                updateCart();
+                            }
+                        });
+                    });
+                    
+                    document.querySelectorAll('.remove-item').forEach(btn => {
+                        btn.addEventListener('click', function() {
+                            const id = this.getAttribute('data-id');
+                            cart.items = cart.items.filter(item => item.id !== id);
+                            updateCart();
+                        });
+                    });
+                }
+            }
+
+
+            
+            // Show feedback when item is added to cart
+            function openCartFeedback(itemName) {
+                cartDrawer.classList.add('open');
+                cartOverlay.classList.add('open');
+                document.body.style.overflow = 'hidden';
+                
+                // Create and show feedback popup
+                const feedback = document.createElement('div');
+                feedback.className = 'fixed top-6 right-6 bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg z-40 transition-all duration-300';
+                feedback.style.transform = 'translateY(-2rem)';
+                feedback.style.opacity = '0';
+                feedback.textContent = `${itemName} added to cart`;
+                document.body.appendChild(feedback);
+                
+                // Animate in
+                setTimeout(() => {
+                    feedback.style.transform = 'translateY(0)';
+                    feedback.style.opacity = '1';
+                }, 10);
+                
+                // Animate out and remove
+                setTimeout(() => {
+                    feedback.style.transform = 'translateY(-2rem)';
+                    feedback.style.opacity = '0';
+                    setTimeout(() => {
+                        feedback.remove();
+                    }, 300);
+                }, 3000);
+            }
+        
+            
+            // Checkout button
+        //     checkoutBtn.addEventListener('click', function() {
+        //         alert('Checkout functionality would be implemented here!');
+        //     });
+        });
+    
+        // Mobile menu toggle
+        {
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        //Contact form submission
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Here you would typically send the form data to a server
+            console.log({ name, email, subject, message });
+            
+            // Show success message
+            alert('Thank you for your message! We will get back to you soon.');
+            
+            // Reset form
+            contactForm.reset();
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    }
+     
+
+    </script>
+
+ 
+
+
+</body>
+</html>

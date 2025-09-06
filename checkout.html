@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUNEXA - Checkout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="navbar fixed w-full shadow-md bg-white z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="forcart.html" class="text-3xl font-bold text-gray-800">LUNEXA</a>
+      <div>
+        <a href="forcart.html" class="text-gray-700 hover:text-purple-600 transition">Continue Shopping</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Checkout Section -->
+  <section class="pt-28 pb-16 container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Checkout</h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- Billing Details -->
+      <div class="bg-white p-6 rounded-2xl shadow-lg">
+        <h3 class="text-xl font-semibold mb-6">Billing Details</h3>
+        <form id="checkoutForm" class="space-y-4" method="POST" action="order.php">
+          <div>
+            <label class="block text-gray-700 mb-2">Full Name</label>
+            <input type="text" name="name" id="fullName" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring focus:ring-purple-400">
+          </div>
+          <div>
+            <label class="block text-gray-700 mb-2">Email</label>
+            <input type="email" name="email" id="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring focus:ring-purple-400">
+          </div>
+          <div>
+            <label class="block text-gray-700 mb-2">Phone Number</label>
+            <input type="tel" name="mobile" id="phone" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring focus:ring-purple-400">
+          </div>
+          <div>
+            <label class="block text-gray-700 mb-2">Address</label>
+            <textarea name="address" id="address" rows="3" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring focus:ring-purple-400"></textarea>
+          </div>
+          <input type="hidden" name="payment_method" id="paymentMethod" value="card">
+          <input type="hidden" name="cart_items" id="cartItems" value="">
+        </form>
+      </div>
+
+      <!-- Order Summary + Payment -->
+      <div class="bg-white p-6 rounded-2xl shadow-lg">
+        <h3 class="text-xl font-semibold mb-6">Order Summary</h3>
+        <div id="orderItems" class="space-y-3 mb-4"></div>
+        <div class="flex justify-between font-bold text-lg border-t pt-3">
+          <span>Total:</span>
+          <span id="orderTotal">₹0</span>
+        </div>
+
+        <!-- Payment Section -->
+        <h3 class="text-xl font-semibold mt-8 mb-4">Payment Method</h3>
+        <div class="space-y-4">
+          <label class="flex items-center space-x-3">
+            <input type="radio" name="payment" value="card" class="text-purple-600" checked>
+            <span>Credit/Debit Card</span>
+          </label>
+          <div id="cardDetails" class="space-y-3 ml-6">
+            <input type="text" placeholder="Card Number" class="w-full px-4 py-3 rounded-lg border border-gray-300">
+            <div class="grid grid-cols-2 gap-4">
+              <input type="text" placeholder="MM/YY" class="px-4 py-3 rounded-lg border border-gray-300">
+              <input type="text" placeholder="CVV" class="px-4 py-3 rounded-lg border border-gray-300">
+            </div>
+          </div>
+
+          <label class="flex items-center space-x-3">
+            <input type="radio" name="payment" value="upi" class="text-purple-600">
+            <span>UPI</span>
+          </label>
+          <div id="upiDetails" class="hidden ml-6">
+            <input type="text" placeholder="UPI ID" class="w-full px-4 py-3 rounded-lg border border-gray-300">
+          </div>
+
+          <label class="flex items-center space-x-3">
+            <input type="radio" name="payment" value="cod" class="text-purple-600">
+            <span>Cash on Delivery</span>
+          </label>
+        </div>
+
+        <button type="submit" form="checkoutForm" id="placeOrderBtn" class="w-full mt-6 bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg font-semibold transition">
+          Place Order
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-200 text-gray-800 py-6 text-center">
+    © 2025 LUNEXA Cosmetics. All rights reserved.
+  </footer>
+
+  <script>
+    // Load cart data from localStorage
+    document.addEventListener("DOMContentLoaded", () => {
+      let cart = JSON.parse(localStorage.getItem("cart")) || { items: [], total: 0 };
+      const orderItemsDiv = document.getElementById("orderItems");
+      const orderTotalSpan = document.getElementById("orderTotal");
+
+      if (cart.items.length === 0) {
+        orderItemsDiv.innerHTML = "<p class='text-gray-500'>Your cart is empty.</p>";
+        orderTotalSpan.textContent = "₹0";
+      } else {
+        let html = "";
+        let total = 0;
+        cart.items.forEach(item => {
+          total += item.price * item.quantity;
+          html += `
+            <div class="flex items-center justify-between mb-4 p-4 bg-gray-50 rounded-lg">
+              <div class="flex items-center">
+                <img src="${item.image}" alt="${item.name}" class="w-16 h-16 object-cover rounded mr-4">
+                <div>
+                  <p class="font-medium text-gray-800">${item.name}</p>
+                  <p class="text-sm text-gray-600">₹${item.price.toFixed(2)} x ${item.quantity}</p>
+                </div>
+              </div>
+              <span class="font-semibold text-gray-800">₹${(item.price * item.quantity).toFixed(2)}</span>
+            </div>
+          `;
+        });
+        orderItemsDiv.innerHTML = html;
+        orderTotalSpan.textContent = "₹" + total.toFixed(2);
+      }
+    });
+
+    // Payment method toggle
+    const cardDetails = document.getElementById("cardDetails");
+    const upiDetails = document.getElementById("upiDetails");
+    document.querySelectorAll("input[name='payment']").forEach(radio => {
+      radio.addEventListener("change", () => {
+        if (radio.value === "card") {
+          cardDetails.classList.remove("hidden");
+          upiDetails.classList.add("hidden");
+        } else if (radio.value === "upi") {
+          upiDetails.classList.remove("hidden");
+          cardDetails.classList.add("hidden");
+        } else {
+          cardDetails.classList.add("hidden");
+          upiDetails.classList.add("hidden");
+        }
+      });
+    });
+
+    // Update payment method hidden input on radio change
+    document.querySelectorAll("input[name='payment']").forEach(radio => {
+      radio.addEventListener("change", () => {
+        document.getElementById("paymentMethod").value = radio.value;
+      });
+    });
+
+    // On form submit, add cart items JSON to hidden input
+    document.getElementById("checkoutForm").addEventListener("submit", (e) => {
+      let cart = JSON.parse(localStorage.getItem("cart")) || { items: [], total: 0 };
+      if (cart.items.length === 0) {
+        e.preventDefault();
+        alert("Your cart is empty.");
+        return false;
+      }
+      document.getElementById("cartItems").value = JSON.stringify(cart.items);
+    });
+
+    // Place order redirect
+    // document.getElementById("placeOrderBtn").addEventListener("click", () => {
+    //   alert("Order placed successfully!");
+    //   window.location.href = "thankyou.html";
+    // });
+  </script>
+</body>
+</html>
